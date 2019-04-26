@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-import sys
-import time
 import Adafruit_DHT
 
 """
@@ -26,6 +24,8 @@ class Temperatura:
      
 
 if __name__ == "__main__":
+    import time
+
     temp = Temperatura()
     while True:
         datos = temp.datos_sensor()

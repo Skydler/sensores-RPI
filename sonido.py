@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 import RPi.GPIO as GPIO
-import time
 
 """
 A0  --> pin 7
@@ -23,6 +22,7 @@ class Sonido:
         GPIO.add_event_detect(canal, GPIO.BOTH, callback=funcion, bouncetime=300) 
 
 if __name__ == "__main__":
+    import time
 
     def test():
         print('Sonido detectado!')

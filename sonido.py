@@ -10,7 +10,7 @@ GND --> pin 6
 D0  --> pin 11 (BCM17)
 """
 
-class sonido:
+class Sonido:
     
     def __init_(self, canal=17)
         self._canal = canal
@@ -28,7 +28,7 @@ if __name__ == "__main__":
         print('Sonido detectado!')
     
 
-    sonido = sonido()
+    sonido = Sonido()
     sonido.agregar_evento(test)
     while True:
         time.sleep(0.5)

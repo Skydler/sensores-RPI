@@ -12,7 +12,7 @@ Resistencia 10K entre VCC y DATA
 4to pin del sensor al GND de la raspberry
 """
 
-class temperatura:
+class Temperatura:
 
     def __init__(self, pin=17, sensor=Adafruit_DHT.DHT11)
     # Usamos el DHT11 que es compatible con el DHT12 
@@ -26,7 +26,7 @@ class temperatura:
      
 
 if __name__ == "__main__":
-    temp = temperatura()
+    temp = Temperatura()
     while True:
         datos = temp.datos_sensor()
         # Imprime en la consola las variables temperatura y humedad con un decimal

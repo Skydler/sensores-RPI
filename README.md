@@ -29,6 +29,9 @@ Interfaz de Python para el manejo de los sensores de temperatura, sonido y la ma
     sudo apt-get install python3-pip
     sudo python3 -m pip install --upgrade pip setuptools wheel
   ```
+  > Importante:
+  > También deberia asegurarse de que su Raspberry tenga activado el uso de conecciones 1-wire, I2C y SPI. Esto puede verificarse facilmente en "configuración de Raspberry" dentro de la pestaña "interfaz"
+  
 ### Instalación:
   Primero descargue y descomprima el repositorio en el directorio que desee, luego ejecute en la terminal:
   

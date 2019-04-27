@@ -44,6 +44,6 @@ def acciones():
 sonido.agregar_evento(acciones)
 
 
-if __name__ == "__main__"
+if __name__ == "__main__":
     while True:
         time.sleep(0.1)

@@ -13,7 +13,7 @@ class Matriz:
         self.serial = spi(port=0, device=0, gpio=noop())
         self.device = max7219(self.serial, cascaded=numero_matrices, rotate=rotacion)
     
-    def mostrar_mensaje(self, msg, delay=0.5, font=1):
+    def mostrar_mensaje(self, msg, delay=0.1, font=1):
         show_message(self.device, msg, fill="white",
                      font=proportional(self.font[font]),
                      scroll_delay=delay)

@@ -24,10 +24,10 @@ Interfaz de Python para el manejo de los sensores de temperatura, sonido y la ma
   
   Asegurese de que su sistema es capaz de descargar e instalar librerías de Python con el package manager `pip3`
 
-  ```
+  ```shell
     sudo apt-get update
-    sudo apt-get install python3-pip
-    sudo python3 -m pip install --upgrade pip setuptools wheel
+    sudo apt-get install python3-pip build-essential python-dev libfreetype6-dev libjpeg-dev
+    pip3 install -U pip setuptools wheel
   ```
   > Importante:
   > También deberia asegurarse de que su Raspberry tenga activado el uso de conecciones 1-wire, I2C y SPI. Esto puede verificarse facilmente en "configuración de Raspberry" dentro de la pestaña "interfaz"
@@ -35,17 +35,32 @@ Interfaz de Python para el manejo de los sensores de temperatura, sonido y la ma
 ### Instalación:
   Primero descargue y descomprima el repositorio en el directorio que desee, luego ejecute en la terminal:
   
-  ```
+  ```shell
     cd sensores-RPI
     pip3 install -r requirements.txt
   ```
   También puede clonar el repositorio y repetir los pasos anteriores:
   
-  ```
+  ```shell
     git clone https://github.com/Skydler/sensores-RPI.git
   ```
   
+  ---
+  
   ## Uso:
     
-    -- TODO
+  Después de la instalación cambie al directorio del repositorio
   
+  ```shell
+    cd sensores-RPI
+  ```
+  
+  Allí se pueden ejecutar cualquiera de los modulos individualmente para probar un sensor en particular o si lo desea hay un ejemplo que prueba los 3 sensores en conjunto.
+  
+  Para ejecutar un modulo escriba en la terminal
+  
+  ```shell
+    python3 [nombre_del_modulo_a_ejecutar.py]
+  ```
+ 
+ 

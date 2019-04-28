@@ -60,7 +60,7 @@ Interfaz de Python para el manejo de los sensores de temperatura, sonido y la ma
   Para ejecutar un modulo escriba en la terminal
   
   ```shell
-    python3 [nombre_del_modulo_a_ejecutar.py]
+    python3 modulo_a_ejecutar.py
   ```
  
  

@@ -19,7 +19,7 @@ class Sonido:
         GPIO.setwarnings(False)
 
     def agregar_evento(self,funcion):
-        GPIO.add_event_detect(self._canal, GPIO.BOTH, callback=funcion, bouncetime=200)
+        GPIO.add_event_detect(self._canal, GPIO.BOTH, callback=funcion, bouncetime=500)
         
 
 if __name__ == "__main__":

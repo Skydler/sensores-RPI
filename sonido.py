@@ -18,19 +18,20 @@ class Sonido:
         # Desactivo las warnings por tener más de un circuito en la GPIO
         GPIO.setwarnings(False)
 
-    def agregar_evento(self, funcion):
-        GPIO.add_event_detect(self._canal, GPIO.BOTH, callback=funcion, bouncetime=500) 
+    def agregar_evento(self,funcion):
+        GPIO.add_event_detect(self._canal, GPIO.BOTH, callback=funcion, bouncetime=200)
+        
 
 if __name__ == "__main__":
     import time
-
-    def test():
+    """ La funcion que vayamos a usar cuando detecte sonido necesita un parametro de cual es el pin al que esta conectado """
+    def test(pin):
         print('Sonido detectado!')
     
 
     sonido = Sonido()
     sonido.agregar_evento(test)
     while True:
-        time.sleep(0.5)
+        time.sleep(0.0001)
 
     GPIO.cleanup()

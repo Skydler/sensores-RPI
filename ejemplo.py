@@ -38,7 +38,7 @@ def acciones(pin):
     guardar_ultima_temperatura()
     temp_data = obtener_ultima_temperatura()
     temp_formateada = 'Temperatura = {0:0.1f}°C  Humedad = {1:0.1f}%'.format(temp_data['temperatura'], temp_data['humedad'])
-    matriz.mostrar_mensaje(temp_formateada, delay=0.01, font=2)
+    matriz.mostrar_mensaje(temp_formateada, delay=0.1, font=2)
     matriz.dibujar_corazon()
             
 sonido.agregar_evento(acciones)

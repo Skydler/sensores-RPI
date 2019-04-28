@@ -33,7 +33,7 @@ def obtener_ultima_temperatura():
     except:
         print("No se pudo obtener el ultimo_log :C")
 
-def acciones():
+def acciones(pin):
     print ("Sonido Detectado!")
     guardar_ultima_temperatura()
     temp_data = obtener_ultima_temperatura()

@@ -6,7 +6,7 @@ import RPi.GPIO as GPIO
 A0  --> pin 7
 VCC --> pin 2
 GND --> pin 6
-D0  --> pin 11 (BCM17)
+D0  --> pin 15 (BCM22)
 """
 
 class Sonido:

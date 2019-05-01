@@ -37,7 +37,7 @@ Interfaz de Python para el manejo de los sensores de temperatura, sonido y la ma
   
   ```shell
     cd sensores-RPI
-    pip3 install -r requirements.txt
+    sudo -H pip3 install -r requirements.txt
   ```
   También puede clonar el repositorio y repetir los pasos anteriores:
   

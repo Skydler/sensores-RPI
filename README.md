@@ -27,7 +27,7 @@ Interfaz de Python para el manejo de los sensores de temperatura, sonido y la ma
   ```shell
     sudo apt-get update
     sudo apt-get install python3-pip build-essential python-dev libfreetype6-dev libjpeg-dev
-    pip3 install -U pip setuptools wheel
+    sudo -H pip3 install -U pip setuptools wheel
   ```
   > Importante:
   > También deberia asegurarse de que su Raspberry tenga activado el uso de conecciones 1-wire, I2C y SPI. Esto puede verificarse facilmente en "configuración de Raspberry" dentro de la pestaña "interfaz"

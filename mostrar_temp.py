@@ -22,7 +22,6 @@ def acciones(pin):
     temp_data = temperatura.datos_sensor()
     temp_formateada = 'Temperatura = {0:0.1f}°C  Humedad = {1:0.1f}%'.format(temp_data['temperatura'], temp_data['humedad'])
     matriz.mostrar_mensaje(temp_formateada, delay=0.08, font=2)
-    matriz.dibujar_corazon()
             
 sonido.agregar_evento(acciones)
 

@@ -15,13 +15,13 @@ def leer_temp():
  
 def guardar_temp(info):
     with open(os.path.join("archivos_texto", "ultimo_log_temperatura.json"), "r") as log_file:
-       try:
+        try:
             lista_de_temperaturas = json.load(log_file)
-        except Exception: # En caso de que el json no sea una lista
+        except Exception:
+            # En caso de que el json no sea una lista
             lista_de_temperaturas = []
-        lista_de_temperaturas.append(info)
-
-    with open(os.path.join("ultimo_log_temperatura.json"), "w") as log_file:
+    lista_de_temperaturas.append(info)
+    with open(os.path.join("archivos_texto", "ultimo_log_temperatura.json"), "w") as log_file:
         json.dump(lista_de_temperaturas, log_file, indent=4)
 
 if __name__ == "__main__":
@@ -29,3 +29,4 @@ if __name__ == "__main__":
         time.sleep(300) # Espera 5 min antes de la proxima lectura
         temp = leer_temp()
         guardar_temp(temp)
+

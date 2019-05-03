@@ -1,1 +1,37 @@
-[]
+[
+    {
+        "temperatura": 21.0,
+        "fecha": "Thu May  2 20:57:24 2019",
+        "humedad": 68.0
+    },
+    {
+        "temperatura": 21.0,
+        "fecha": "Thu May  2 20:57:35 2019",
+        "humedad": 67.0
+    },
+    {
+        "temperatura": 21.0,
+        "fecha": "Thu May  2 20:57:41 2019",
+        "humedad": 67.0
+    },
+    {
+        "temperatura": 21.0,
+        "fecha": "Thu May  2 20:57:45 2019",
+        "humedad": 67.0
+    },
+    {
+        "temperatura": 21.0,
+        "fecha": "Thu May  2 20:57:48 2019",
+        "humedad": 67.0
+    },
+    {
+        "temperatura": 21.0,
+        "fecha": "Thu May  2 20:57:52 2019",
+        "humedad": 67.0
+    },
+    {
+        "temperatura": 21.0,
+        "fecha": "Thu May  2 20:57:55 2019",
+        "humedad": 67.0
+    }
+]

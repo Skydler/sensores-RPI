@@ -11,19 +11,18 @@ from temperatura import Temperatura
 # Temperatura --> vcc: 1, sda: 11, clk: 14
 
 # Activamos los sensores que vamos a usar
+# matriz = Matriz(numero_matrices=2, ancho=16)
 matriz = Matriz()
 sonido = Sonido()
 temperatura = Temperatura()
 
-def acciones(pin):
+def acciones():
     print ("Sonido Detectado!")
     temp_data = temperatura.datos_sensor()
     temp_formateada = 'Temperatura = {0:0.1f}°C  Humedad = {1:0.1f}%'.format(temp_data['temperatura'], temp_data['humedad'])
     matriz.mostrar_mensaje(temp_formateada, delay=0.08, font=2)
             
-sonido.agregar_evento(acciones)
-
-
 if __name__ == "__main__":
     while True:
         time.sleep(0.1)
+        sonido.evento_detectado(acciones)

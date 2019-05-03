@@ -1,7 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-import json
-import os
 import time
 from matriz import Matriz
 from sonido import Sonido

@@ -1,6 +1,6 @@
 # Sensores Raspberry Pi 3
 
-Interfaz de Python para el manejo de los sensores de temperatura, sonido y la matriz de leds provistas por la cátedra de Python de la UNLP
+Interfaz de Python para el manejo de los sensores de temperatura, sonido y la matriz de leds
 
 ![Raspberry Pi logo](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/RPi-Logo-Stacked-PRINT.png/256px-RPi-Logo-Stacked-PRINT.png)
 
